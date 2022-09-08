@@ -9,9 +9,7 @@ export default function Home() {
           <div className="cards">
             <Cardd />
           </div>
-          <div className="carusel">
-        <h1>sasa</h1>
-          </div>
+
         </div>
       </div>
     </StyledHome>
