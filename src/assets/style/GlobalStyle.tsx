@@ -8,7 +8,6 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     .container{
-        
         max-width: 1235px;
         margin: 0 auto;
         padding: 0 1rem;
