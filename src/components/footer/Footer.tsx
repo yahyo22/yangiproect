@@ -8,5 +8,5 @@ export default function Footer() {
   )
 }
 const StyledFooter = styled.div`
-        
+    background: #12AAE4;
 `
