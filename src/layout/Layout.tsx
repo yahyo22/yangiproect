@@ -1,14 +1,14 @@
-import React from 'react'
-import {Outlet} from "react-router-dom";    
+import React from "react";
+import { Outlet } from "react-router-dom";
 import styled from "styled-components";
+import Navbar from "../components/navbar/Navbar";
 
 export default function Layout() {
   return (
     <StyledLayout>
-        <Outlet/>
+      <Navbar />
+      <Outlet />
     </StyledLayout>
-  )
+  );
 }
-const StyledLayout = styled.div`
-    
-`
+const StyledLayout = styled.div``;
