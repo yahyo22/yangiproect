@@ -62,9 +62,11 @@ const StyledHome = styled.div`
     padding: 40px 0px;
 
     .wrapper-home {
+
       .cards {
         margin: 40px 0px;
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
       }
@@ -86,7 +88,7 @@ border: 1px solid rgba(49, 57, 73, 0.1);
 border-radius: 24px;
         gap: 46px;
         display: flex;
-        padding: 40px 32px;
+        padding: 40px 32px ;
         div {
           display: flex;
           flex-direction: column;
