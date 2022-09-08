@@ -26,6 +26,6 @@
     "alwaysStrict": true
   },
   "include": [
-    "src"
+    "./src/*",
   ]
 }

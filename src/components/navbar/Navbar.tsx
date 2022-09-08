@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // Images
-<<<<<<< HEAD
 import logo from "../../assets/img/logo.png";
 import SelectSmall from "../select/Select";
 
@@ -13,24 +12,9 @@ export default function Navbar() {
       <div className="container">
         <div className="logo__wrapper">
           <Link to="#">
-            {/* <img src={logo} alt="logo" /> */}
+            <img src={logo} alt="logo" />
             <h1 className="nav-logo-h1">School</h1>
           </Link>
-=======
-// import logo from "../../assets/img/logo.png";
-
-export default function Navbar() {
-  return (
-    <nav>
-        <div className="container">
-            <ul>
-                <li>
-                    <Link to="#">
-                        <img  alt="logo" />
-                    </Link>
-                </li>
-            </ul>
->>>>>>> 4f4e35f2acb14e7a049aea0f67d02bd45667ac02
         </div>
         <ul className="nav-list">
           <li className="list">
@@ -75,6 +59,7 @@ const StyledNavbar = styled.nav`
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     .logo__wrapper {
       a {
@@ -100,6 +85,21 @@ const StyledNavbar = styled.nav`
           font-size: 16px;
           line-height: 24px;
           color: #313949;
+          position: relative;
+
+          &:hover {
+            &::before {
+              content: "";
+              width: 61px;
+              height: 8px;
+              background-color: #12aae4;
+              border-radius: 0px 0px 6px 6px;
+              position: absolute;
+              top: -20px;
+              left: 0px;
+              transition: .3s;
+            }
+          }
         }
       }
     }
