@@ -11,9 +11,36 @@
     mask-position: center;
     -webkit-mask-position: center;
   }
-  .icon.insta{
+  .icon.mail{
   mask-image: url("../icon/mail.svg");
   -webkit-mask-image: url("../icon//mail.svg");
   
   background-color: #ffffff;
   }
+  .icon.phone{
+    mask-image: url("../icon/phone.svg");
+    -webkit-mask-image: url("../icon//phone.svg");
+    background-color: #ffffff;
+    }
+  
+  .icon.facebook{
+    mask-image: url("../icon/facebook-square-brands\ \(1\)\ 1.svg");
+    -webkit-mask-image: url("../icon/facebook-square-brands\ \(1\)\ 1.svg");
+    background-color: #ffffff;
+    }
+    
+  .icon.insta{
+    mask-image: url("../icon/instagram-square-brands\ 1.svg");
+    -webkit-mask-image: url("../icon/instagram-square-brands\ 1.svg");
+    background-color: #ffffff;
+    }
+    .icon.telegram{
+      mask-image: url("../icon/telegram-brands\ 1.svg");
+      -webkit-mask-image: url("../icon/telegram-brands\ 1.svg");
+      background-color: #ffffff;
+      }
+      .icon.twiter{
+        mask-image: url("../icon/twitter-square-brands\ 1.svg");
+        -webkit-mask-image: url("../icon/twitter-square-brands\ 1.svg");
+        background-color: #ffffff;
+        }
