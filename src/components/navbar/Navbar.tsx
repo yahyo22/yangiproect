@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // Images
+<<<<<<< HEAD
 import logo from "../../assets/img/logo.png";
 import SelectSmall from "../select/Select";
 
@@ -15,6 +16,21 @@ export default function Navbar() {
             {/* <img src={logo} alt="logo" /> */}
             <h1 className="nav-logo-h1">School</h1>
           </Link>
+=======
+// import logo from "../../assets/img/logo.png";
+
+export default function Navbar() {
+  return (
+    <nav>
+        <div className="container">
+            <ul>
+                <li>
+                    <Link to="#">
+                        <img  alt="logo" />
+                    </Link>
+                </li>
+            </ul>
+>>>>>>> 4f4e35f2acb14e7a049aea0f67d02bd45667ac02
         </div>
         <ul className="nav-list">
           <li className="list">
