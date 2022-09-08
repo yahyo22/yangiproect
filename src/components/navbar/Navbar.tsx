@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+// Components
+import SelectSmall from "../select/Select";
+
 // Images
 import logo from "../../assets/img/logo.png";
-import SelectSmall from "../select/Select";
+import user from "../../assets/icon/user.svg";
 
 export default function Navbar() {
   return (
@@ -43,6 +46,9 @@ export default function Navbar() {
           <div className="laguage__wrapper">
             <SelectSmall />
           </div>
+          <Link to="#">
+            <img src={user} alt="user-icon" />
+          </Link>
         </div>
       </div>
     </StyledNavbar>
@@ -97,7 +103,7 @@ const StyledNavbar = styled.nav`
               position: absolute;
               top: -20px;
               left: 0px;
-              transition: .3s;
+              transition: 0.3s;
             }
           }
         }
@@ -129,21 +135,9 @@ const StyledNavbar = styled.nav`
           border-right: 2px solid #313949;
           transform: rotate(44deg);
         }
-
-        /* .select-items-wrapper {
-          padding: 8px 12px;
-          width: 120px;
-          height: 100%;
-          background-color: #f6f6f9;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          row-gap: 12px;
-          position: absolute;
-          left: 0px;
-          bottom: 0px;
-        } */
+      }
+      img {
+        cursor: pointer;
       }
     }
   }
