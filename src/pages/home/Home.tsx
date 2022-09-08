@@ -72,11 +72,11 @@ const StyledHome = styled.div`
     padding: 40px 0px;
 
     .wrapper-home {
-
       .cards {
         margin: 40px 0px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
       }
@@ -100,11 +100,13 @@ const StyledHome = styled.div`
 
       .carrusel-main {
         width: 100%;
-        height: 500px;
+        height: 560px;
+        position: relative;
 
         div {
           width: max-content;
           border-radius: 15px;
+          transform: translateX(50%);
         }
 
         img {
@@ -114,7 +116,7 @@ const StyledHome = styled.div`
 
         h2 {
           margin: 0 auto;
-          margin-top: 520px;
+          margin-top: 80px;
           padding-left: 29px;
           width: max-content;
           font-weight: 500;
@@ -122,13 +124,17 @@ const StyledHome = styled.div`
           line-height: 64px;
           color: #fff;
           background: rgba(18, 170, 228, 0.3);
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          transform: translateX(50%);
         }
       }
     }
 
     /* XARITA */
     .uzbekistan {
-      margin-top: 115px;
+      margin-top: 15px;
       align-items: center;
       display: flex;
       justify-content: space-between;
@@ -143,7 +149,7 @@ const StyledHome = styled.div`
         display: flex;
         padding: 40px 32px;
         margin-bottom: 63px;
-        padding: 40px 32px ;
+        padding: 40px 32px;
 
         div {
           display: flex;

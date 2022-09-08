@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import "./Fonts.css"
 import "./icon.css"
 export const GlobalStyle = createGlobalStyle`
+
     * {
         margin: 0;
         padding: 0;

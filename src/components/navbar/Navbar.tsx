@@ -72,6 +72,7 @@ const StyledNavbar = styled.nav`
         display: flex;
         align-items: center;
         gap: 6px;
+        text-decoration: none;
 
         h1 {
           font-size: 28px;
@@ -87,11 +88,14 @@ const StyledNavbar = styled.nav`
       gap: 32px;
 
       .list {
+        text-decoration: none;
+
         a {
           font-size: 16px;
           line-height: 24px;
           color: #313949;
           position: relative;
+          text-decoration: none;
 
           &:hover {
             &::before {

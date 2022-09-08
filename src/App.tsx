@@ -1,20 +1,23 @@
-import React from 'react'
-import styled from 'styled-components'
-import { GlobalStyle } from './assets/style/GlobalStyle'
 import { BrowserRouter } from "react-router-dom";
-import Router from './router/Router';
+import styled from "styled-components";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
+import "bootstrap/js/dist/carousel.js";
+
+// Style
+import { GlobalStyle } from "./assets/style/GlobalStyle";
+
+// Components
+import Router from "./router/Router";
 
 export default function App() {
   return (
     <StyledApp>
       <BrowserRouter>
-      <GlobalStyle/>
-      <Router/>
+        <GlobalStyle />
+        <Router />
       </BrowserRouter>
-
     </StyledApp>
-  )
+  );
 }
-const StyledApp = styled.div`
-  
-`
+const StyledApp = styled.div``;
