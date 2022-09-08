@@ -18,6 +18,9 @@ export default function Home() {
           <div className="cards">
             <Cardd />
           </div>
+          <div className="carusel">
+        <h1>sasa</h1>
+          </div>
         </div>
 
         {/* CARRUSEL SECTION */}
@@ -38,9 +41,13 @@ const StyledHome = styled.div`
 
     .wrapper-home {
       .cards {
+      margin: 40px 0px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
+      }
+      .carusel{
+        background: #FFFFFF;
       }
     }
   }

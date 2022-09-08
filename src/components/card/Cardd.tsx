@@ -3,8 +3,13 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { CardActionArea, CardActions } from '@mui/material';
 import img from "../../assets/img/frends.png";
+import registan from "../../assets/img/registan.png";
+import trevel from "../../assets/img/travel.png";
+import school from "../../assets/img/school.png";
+import uchoba from "../../assets/img/uchoba.png";
+import money from "../../assets/img/money.png";
 export default function Cardd():any {
 
   const arrCard = [{
@@ -14,29 +19,29 @@ export default function Cardd():any {
     date:"19:01 | 10-12-2021",
   },
   {
-    img:img,
+    img:registan,
     type:"O‘quvchilar",
     title:"Termiz muhandistlik-texnologiya instituti tashkil etildi",
       date:"19:01 | 10-12-2021",
     },{
-    img:img,
+    img:trevel,
     type:"O‘qituvchilar",
     title:"Talabalar uchun ptezdident va davlat stipendiyalarini tayinlash tartibitasdiqlandi",
     date:"19:01 | 10-12-2021",
   },{
-    img:img,
+    img:school,
     type:"Ota-ona ",
     title:"Termiz muhandistlik-texnologiya instituti tashkil etildi",
     date:"19:01 | 10-12-2021",
   },
   {
-    img:img,
+    img:uchoba,
     type:"O‘qituvchilar",
     title:"Termiz muhandistlik-texnologiya instituti tashkil etildi",
     date:"19:01 | 10-12-2021",
   },
   {
-    img:img,
+    img:money,
     type:"O‘qituvchilar",
     title:"Talabalar uchun ptezdident va davlatstipendiyalarini tayinlash tartibi tasdiqlandi",
     date:"19:01 | 10-12-2021",
