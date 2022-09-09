@@ -105,6 +105,20 @@ const StyledHome = styled.div`
         .react-3d-carousel {
           width: 100%;
           height: 560px !important;
+
+          .slider-single-content {
+            width: 77%;
+            border-radius: 15px;
+            margin: 0 auto;
+          }
+
+          .slider-left,
+          .slider-right {
+            div {
+              background-color: #252525;
+              border: none;
+            }
+          }
         }
 
         @media (max-width: 630px) {
