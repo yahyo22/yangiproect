@@ -49,7 +49,7 @@ export default function Cardd():any {
   ];
   return (
     arrCard.map((i)=>(
-      <Card sx={{ maxWidth: 392, height:401, }}>
+      <Card key={i.img} sx={{ maxWidth: 392, height:401, }}>
       <CardActionArea>
         <CardMedia
           component="img"

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
-import "./Fonts.css"
-import "./icon.css"
+import "./Fonts.css";
+import "./icon.css";
 export const GlobalStyle = createGlobalStyle`
 
     * {
@@ -10,15 +10,14 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
     }
     
     .container{
         max-width: 1235px;
         margin: 0 auto;
         padding: 0 1rem;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
     }
 
     ul {

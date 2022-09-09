@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 
 // Components
@@ -38,7 +38,7 @@ export default function Home() {
             </main>
           </section>
           <section className="uzbekistan">
-            <section>
+            <section className="uzb-img">
               <img src={uzbekistan} alt="uzbek" />
             </section>
             <section className="uzbek-2">
@@ -101,22 +101,34 @@ const StyledHome = styled.div`
       .carrusel-main {
         width: 100%;
         height: 560px;
-        position: relative;
 
-        div {
-          width: max-content;
-          border-radius: 15px;
-          transform: translateX(50%);
+        .react-3d-carousel {
+          width: 100%;
+          height: 560px !important;
         }
 
-        img {
-          width: 612px;
-          height: 450px;
+        @media (max-width: 630px) {
+          height: 460px;
+          .react-3d-carousel {
+            height: 460px !important;
+          }
+        }
+        @media (max-width: 480px) {
+          height: 360px;
+          .react-3d-carousel {
+            height: 360px !important;
+          }
+        }
+        @media (max-width: 348px) {
+          height: 260px;
+          .react-3d-carousel {
+            height: 260px !important;
+          }
         }
 
         h2 {
           margin: 0 auto;
-          margin-top: 80px;
+          margin-top: 0px;
           padding-left: 29px;
           width: max-content;
           font-weight: 500;
@@ -124,10 +136,16 @@ const StyledHome = styled.div`
           line-height: 64px;
           color: #fff;
           background: rgba(18, 170, 228, 0.3);
-          position: absolute;
-          left: 0px;
-          bottom: 0px;
-          transform: translateX(50%);
+
+          @media (max-width: 630px) {
+            font-size: 28px;
+          }
+          @media (max-width: 480px) {
+            font-size: 20px;
+          }
+          @media (max-width: 348px) {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -141,15 +159,28 @@ const StyledHome = styled.div`
       flex-direction: column;
       gap: 23px;
 
+      .uzb-img {
+        max-width: 608px;
+        max-height: 325px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
       .uzbek-2 {
         background: #ffffff;
         border: 1px solid rgba(49, 57, 73, 0.1);
         border-radius: 24px;
-        gap: 46px;
         display: flex;
-        padding: 40px 32px;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 50px;
+        row-gap: 66px;
         margin-bottom: 63px;
-        padding: 40px 32px;
+        padding: 40px 30px;
 
         div {
           display: flex;
@@ -158,15 +189,12 @@ const StyledHome = styled.div`
           text-align: center;
 
           h2 {
-            font-style: normal;
             font-weight: 500;
             font-size: 24px;
             line-height: 32px;
             color: #12aae4;
           }
           p {
-            font-family: "Montserrat";
-            font-style: normal;
             font-weight: 600;
             font-size: 40px;
             line-height: 48px;
