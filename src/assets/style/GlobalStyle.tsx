@@ -16,9 +16,6 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 1235px;
         margin: 0 auto;
         padding: 0 1rem;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
     }
 
     ul {
